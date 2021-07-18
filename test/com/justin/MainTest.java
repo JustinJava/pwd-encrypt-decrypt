@@ -1,8 +1,12 @@
 package com.justin;
 
 /**
- * 密码加解密测试类
- */
+ * @program: DataStructures
+ * @description: 密码加解密测试类
+ * @author: JustinQin
+ * @create: 2021/7/18 11:11
+ * @version: v1.0.0
+ **/
 public class MainTest {
 	private final static String HOST="127.0.0.1"; //数据库IP
 	private final static String USER = "root"; //数据库用户
