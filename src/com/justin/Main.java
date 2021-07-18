@@ -1,17 +1,17 @@
 package com.justin;
 
-import java.io.IOException;
-
 import com.justin.service.pass.IDecrypt;
 import com.justin.service.pass.IEncrypt;
 import com.justin.service.pass.impl.Decrypt;
 import com.justin.service.pass.impl.Encrypt;
 
+import java.io.IOException;
+
 /**
  * @program: pwd-encrypt-decrypt
- * @description: pwd-encrypt-decrypt
+ * @description: 加解密的主入口
  * @author: JustinQin
- * @create: 2021/6/10 11:11
+ * @create: 2021/7/18 11:11
  * @version: v1.0.0
  **/
 public class Main {
@@ -21,9 +21,9 @@ public class Main {
 			System.out.println("The param's length must be 2 or 3 !!!");
 			System.out.println("Such as:");
 			System.out.println("1.encrypt command.");
-			System.out.println("java -jar pwd-encrypt-decrypt.jar host user password");
+			System.out.println("java -jar pwd.jar host user password");
 			System.out.println("2.decrypt command.");
-			System.out.println("java -jar pwd-encrypt-decrypt.jar host user");
+			System.out.println("java -jar pwd.jar host user");
 			System.exit(1);
 		}
 		
@@ -35,12 +35,12 @@ public class Main {
 		try {
 			if (null != password) {
 				System.out.println(host + "," + user +"," + password);
-				//encrypt entrance
+				//明文加密主入口
 				main.enPass(host,user,password);
 				System.out.println("Encrypt password is ok.");
 			}else{
 				System.out.println(host + "," + user);
-				//decrypt entrance
+				//密文解密主入口
 				password = main.dePass(host,user);
 				System.out.println("Decrypt password is ok.");
 				System.out.println(password);
