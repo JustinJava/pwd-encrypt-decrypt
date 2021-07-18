@@ -37,3 +37,10 @@
 * 配置sh脚本
     * 读取密文文件得到明文密码，读取命令为`java -jar pwd.jar host user |tail -n 1` 其中`|tail -n 1`表示取最后一行输出的明文密码
     * 修改sh脚本中的数据库密码为通过命令`java -jar pwd.jar host user |tail -n 1`方式获取
+
+三、快速上手
+--
+* 关于本加解密工具包，上面的应用场景只是大致介绍了思路和实现步骤~
+* 具体如何使用和快速上手，可以参考我的这篇博客文章学习：
+https://blog.csdn.net/JustinQin/article/details/118880551?spm=1001.2014.3001.5501
+ 
