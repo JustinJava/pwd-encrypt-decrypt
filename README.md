@@ -42,5 +42,6 @@
 --
 * 关于本加解密工具包，上面的应用场景只是大致介绍了思路和实现步骤~
 * 具体如何使用和快速上手，可以参考我的这篇博客文章学习：
-https://blog.csdn.net/JustinQin/article/details/118880551?spm=1001.2014.3001.5501
+https://blog.csdn.net/JustinQin/article/details/119132853?utm_source=app&app_version=4.12.0
+
  
